@@ -1,11 +1,8 @@
-from time import sleep
-import selenium
-import pandas as pd
-from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
 from datetime import datetime, timedelta
+import pandas as pd
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+
 # import browser Chrome for Selenium
 options = webdriver.ChromeOptions()
 options.add_experimental_option("detach", True)
@@ -18,7 +15,7 @@ data=[]
 idx = 0
 
 while True:
-    print("Process 300 days from {}-{}-{}".format(current_date.day, current_date.month, current_date.year))
+   # print("Process 300 days from {}-{}-{}".format(current_date.day, current_date.month, current_date.year))
     url = 'https://www.thantai1.net/so-ket-qua'
     browser.get(url)
 
